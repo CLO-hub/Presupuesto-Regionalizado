@@ -795,6 +795,8 @@ select{font-family:'Source Sans 3',sans-serif;padding:8px 10px;border:1px solid 
 #overlay{position:fixed;inset:0;background:rgba(15,23,42,.5);display:flex;align-items:center;justify-content:center;z-index:999;padding:20px}
 #overlay .box{background:var(--paper);max-width:600px;border-radius:14px;padding:30px;box-shadow:0 20px 60px rgba(0,0,0,.3);border-top:4px solid var(--fuchsia)}
 #overlay h2{font-size:19px}
+#overlay h2.popup-title{font-size:23px;font-weight:800;color:var(--fuchsia-dark);text-transform:uppercase;letter-spacing:-0.01em;line-height:1.28;margin:0 0 16px}
+#overlay .popup-alert{background:#fbe7f2;border-left:5px solid var(--fuchsia);border-radius:4px;padding:14px 18px;margin:0 0 20px;font-weight:700;font-size:14.5px;line-height:1.55;color:var(--ink)}
 #overlay p{font-size:14px;color:var(--ink-soft)}
 #overlay label{display:flex;gap:8px;align-items:center;font-size:13px;color:var(--ink-soft);margin:16px 0}
 #overlay button{background:var(--fuchsia);color:#fff;border:0;padding:11px 22px;border-radius:8px;font-size:14px;font-weight:700;cursor:pointer}
@@ -895,7 +897,8 @@ td.cell-sector{min-width:220px}
 
 <div id="overlay">
   <div class="box">
-    <h2>Presupuesto Regionalizado 2026&ndash;2027: tres versiones comparadas</h2>
+    <h2 class="popup-title">Antes de usar estas cifras: instrumento de exploraci&oacute;n</h2>
+    <div class="popup-alert">Esta herramienta es solo un instrumento de exploraci&oacute;n para facilitar el an&aacute;lisis. Antes de usar cualquier dato en proposiciones o intervenciones p&uacute;blicas, debe confirmarse directamente en la fuente.</div>
     <p>Este instrumento compara, con el mayor nivel de detalle que permite la fuente, tres libros de regionalizaci&oacute;n del Departamento Nacional de Planeaci&oacute;n (DNP): la <b>Ponencia II Debate 2026</b> (15/10/2025), la <b>radicaci&oacute;n inicial 2027 (1&ordf; versi&oacute;n)</b> (16/09/2026) y la <b>segunda ponencia 2027 (2&ordf; versi&oacute;n)</b>, radicada el 15/10/2026. Los datos de departamento, sector y proyecto fueron reconstruidos directamente de los tres PDF oficiales y pasaron por una auditor&iacute;a independiente de conciliaci&oacute;n: para los 33 departamentos en las tres versiones, la suma de sus sectores y la suma de sus proyectos coinciden con el total departamental declarado por el DNP, con diferencias de redondeo inferiores al 0,05% &mdash; ver <b>"Validaci&oacute;n de datos"</b> m&aacute;s abajo para el detalle de qu&eacute; se corrigi&oacute; y qu&eacute; limitaci&oacute;n queda abierta.</p>
     <p>La regionalizaci&oacute;n es <b>preliminar e indicativa</b>: el PGN no asigna recursos a los departamentos, solo fija topes de gasto por entidad (Decreto 1082 de 2015). Un cambio grande en un sector puede reflejar que DNP reclasific&oacute; cu&aacute;nto de su presupuesto declara "Regionalizado" frente a "Nacional", no necesariamente un recorte o aumento real &mdash; ver metodolog&iacute;a.</p>
     <label><input type="checkbox" id="noshow"> No volver a mostrar en este dispositivo</label>
